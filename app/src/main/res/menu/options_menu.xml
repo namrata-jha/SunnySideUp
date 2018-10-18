@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent" >
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_white_48dp"/>
+
+    <item android:title="Settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_settings_white_48dp"
+        android:id="@+id/action_settings" />
+
+</menu>

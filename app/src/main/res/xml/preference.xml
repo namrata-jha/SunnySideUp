@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Location customization settings">
+        <Preference
+            android:key="location"
+            android:title="Change default home location"
+            android:summary=""
+            android:defaultValue="">
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

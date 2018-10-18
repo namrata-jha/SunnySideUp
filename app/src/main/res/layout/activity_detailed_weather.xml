@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/boldfont"
+            android:text="CURRENT WEATHER REPORT"
+            android:textAlignment="center"
+            android:textColor="#A6000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2.75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/h_summary_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sunny_side_up"
+                android:layout_centerVertical="true"/>
+
+
+            <TextView
+                android:layout_toRightOf="@id/h_summary_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Summary"
+                android:textColor="#80000000"
+                android:fontFamily="@font/boldfont"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:id="@+id/summary_label"/>
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_below="@id/summary_label"
+                android:layout_alignStart="@id/summary_label"
+                android:layout_toLeftOf="@id/summary_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boldfont"
+                android:text="Partly cloudy"
+                android:textAlignment="viewStart"
+                android:layout_marginRight="4dp"
+                android:textColor="#99000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/summary_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text=" 50°"
+                android:layout_centerVertical="true"
+                android:textColor="#000000"
+                android:fontFamily="@font/boldfont"
+                android:textSize="48sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2.75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visibility"
+                    android:textColor="#80000000"
+                    android:fontFamily="@font/boldfont"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/visibility"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/visibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boldfont"
+                    android:text="9.76"
+                    android:textAlignment="center"
+                    android:textColor="#B3000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wind"
+                    android:textColor="#80000000"
+                    android:fontFamily="@font/boldfont"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/wind_speed"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/wind_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boldfont"
+                    android:text="20 km/hr"
+                    android:textAlignment="center"
+                    android:textColor="#B3000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="fill"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:textColor="#80000000"
+                    android:fontFamily="@font/boldfont"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/humidity"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boldfont"
+                    android:text="78%"
+                    android:textAlignment="center"
+                    android:textColor="#B3000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probability"
+                    android:textColor="#80000000"
+                    android:fontFamily="@font/boldfont"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/rain"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/precip_prob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boldfont"
+                    android:text="0.9"
+                    android:textAlignment="center"
+                    android:textColor="#B3000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:textColor="#80000000"
+                    android:fontFamily="@font/boldfont"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/pressure"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boldfont"
+                    android:text="10116 Pa."
+                    android:textAlignment="center"
+                    android:textColor="#B3000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="fill"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dew Point"
+                    android:textColor="#80000000"
+                    android:fontFamily="@font/boldfont"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/dew_point"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/dew_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boldfont"
+                    android:text="78%"
+                    android:textAlignment="center"
+                    android:textColor="#B3000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UV Index"
+                        android:textColor="#80000000"
+                        android:fontFamily="@font/boldfont"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:src="@drawable/uv"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/uv_index"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/boldfont"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="#B3000000"
+                        android:textSize="26sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cloud Cover"
+                        android:textColor="#80000000"
+                        android:fontFamily="@font/boldfont"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:src="@drawable/clouds"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/cloud_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/boldfont"
+                        android:text="10116 Pa."
+                        android:textAlignment="center"
+                        android:textColor="#B3000000"
+                        android:textSize="26sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="fill"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ozone"
+                        android:textColor="#80000000"
+                        android:fontFamily="@font/boldfont"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ozone"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/ozone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/boldfont"
+                        android:text="276.44"
+                        android:textAlignment="center"
+                        android:textColor="#B3000000"
+                        android:textSize="26sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2.75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border"/>
+
+    </LinearLayout>
+
+</ScrollView>
